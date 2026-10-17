@@ -266,7 +266,7 @@ from film f
 cross join category c 
 ;
 
-select * from category c ;
+-- No, esta consulta no aporta valor ya que va a dar resultados erroneos como decir que una pelicula la cual es de terror ahora saldra como una infantil o viceversa
 --45. Encuentra los actores que han participado en películas de la categoría 'Action'.
 select a.actor_id, concat(a.nombre, ' ', a.apellido) as nombre_actor
 from actor a , film_actor fa , film f, film_category fc , category c 
