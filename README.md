@@ -22,20 +22,16 @@ El objetivo principal es responder a preguntas clave del negocio, optimizar el a
 
 ## 💡 Principales Hallazgos y Análisis del Negocio
 
-Tras la ejecución y análisis de las 64 consultas SQL, se han obtenido las siguientes conclusiones principales organizadas por áreas funcionales:
+Tras la ejecución y análisis de las 64 consultas SQL, se han obtenido las siguientes conclusiones principales:
 
-### 1. 📽️ Rendimiento del Catálogo e Inventario
-* **Películas más demandadas:** Se identificaron las categorías y títulos con mayor rotación de alquiler. Las categorías de mayor popularidad generan un volumen significativo del total de ingresos.
-* **Disponibilidad y rotación:** Se detectaron patrones sobre el tiempo medio de préstamo de las películas y películas que actualmente no se encuentran devueltas (`return_date IS NULL`).
-* **Inventario sin uso:** Se localizaron títulos y copias en inventario sin registros de alquiler recientes, representando un coste de oportunidad en almacenamiento.
 
-### 2. 👥 Comportamiento de Clientes y Recaudación
-* **Segmentación de Clientes:** Se identificaron los clientes TOP (mayor número de alquileres y mayor gasto acumulado en la tabla `payment`), permitiendo diseñar programas de fidelización.
-* **Patrones de Devolución:** Un porcentaje relevante de los alquileres supera la duración estándar estipulada, generando cobros/penalizaciones por retraso.
+-Las peliculas de clasificación "PG-13" tienden a ser las peliculas mas largas teniendo un promedio de **120,44** minutos mientras que las peliculas de clasificacion "PG" suelen ser las mas cortas con un promedio de **112,01** minutos.
+-La duración de los alquileres de peliculas suele durar casi 5 días de media.
+-La empresa **Shakila** ha recaudado un total de **67.416,51** euros.
+-El cliente que mas dinero ha gastado es **KARL SEAL** con **221,55** euros.
+-El cliente que mas alquileres ha realizado es **ELEANOR HUNT** con un total de **46** y el que menos es **BRIAN WYMAN** con **12**.
+-El actor que ha trabajado en más peliculas es **GINA DEGENERES** con un total de 42.
 
-### 3. 🎭 Análisis de Reparto y Producción
-* **Actores más prolíficos:** Se listaron los actores con mayor presencia en el catálogo y su impacto directo en las películas más alquiladas.
-* **Análisis Cruzado:** La relación entre categorías específicas de películas y sus actores más recurrentes.
 
 ---
 
@@ -50,8 +46,8 @@ En el desarrollo de las 64 consultas se han aplicado las siguientes técnicas de
 
 ---
 
-## 🚀 Cómo Ejecutar las Consultas
+## 🎓  Agradecimientos
+* Agradecimientos a ThePowerMBA por la facilitacion de conocimientos y herramientas para hacer el proyecto.
+* A la comunidad de MySQL por proveer la base de datos de ejemplo Sakila.
 
-1. Clona este repositorio:
-   ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
+
